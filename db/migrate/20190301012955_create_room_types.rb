@@ -1,0 +1,11 @@
+class CreateRoomTypes < ActiveRecord::Migration[5.2]
+  def change
+    create_table :room_types do |t|
+      t.string :hotel_id
+      t.integer :room_id
+      t.string :name
+
+      t.timestamps
+    end
+  end
+end
